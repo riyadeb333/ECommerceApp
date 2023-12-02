@@ -1,8 +1,8 @@
 
 package com.mycompany.ecommerceapp.servlets;
 
-import com.mycompany.ecommerceapp.dao.CategoryDao;
-import com.mycompany.ecommerceapp.dao.ProductDao;
+import com.mycompany.ecommerceapp.doa.CategoryDao;
+import com.mycompany.ecommerceapp.doa.ProductDao;
 import com.mycompany.ecommerceapp.entities.Category;
 import com.mycompany.ecommerceapp.entities.Product;
 import com.mycompany.ecommerceapp.helper.FactoryProvider;

@@ -1,4 +1,4 @@
-package com.mycompany.ecommerceapp.dao;
+package com.mycompany.ecommerceapp.doa;
 
 import com.mycompany.ecommerceapp.entities.Category;
 import com.mycompany.ecommerceapp.entities.Orders;

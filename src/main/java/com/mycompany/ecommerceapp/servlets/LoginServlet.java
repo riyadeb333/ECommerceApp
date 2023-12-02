@@ -1,7 +1,7 @@
 
 package com.mycompany.ecommerceapp.servlets;
 
-import com.mycompany.ecommerceapp.dao.UserDao;
+import com.mycompany.ecommerceapp.doa.UserDao;
 import com.mycompany.ecommerceapp.entities.User;
 import com.mycompany.ecommerceapp.helper.FactoryProvider;
 import java.io.IOException;

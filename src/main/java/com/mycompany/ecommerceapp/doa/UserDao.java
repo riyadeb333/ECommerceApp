@@ -1,5 +1,5 @@
 
-package com.mycompany.ecommerceapp.dao;
+package com.mycompany.ecommerceapp.doa;
 
 import com.mycompany.ecommerceapp.entities.User;
 //import javax.persistence.TypedQuery;
