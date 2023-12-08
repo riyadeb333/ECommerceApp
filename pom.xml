@@ -21,6 +21,21 @@
             <version>7.0</version>
             <scope>provided</scope>
         </dependency>
+
+         <!-- Add Guice Dependency -->
+     <dependency>
+        <groupId>com.google.inject</groupId>
+        <artifactId>guice</artifactId>
+        <version>5.0.1</version> <!-- Update to the latest compatible version -->
+    </dependency>
+    
+    <!-- Add XStream Dependency -->
+    <dependency>
+        <groupId>com.thoughtworks.xstream</groupId>
+        <artifactId>xstream</artifactId>
+        <version>1.4.18</version> <!-- Update to the latest compatible version -->
+    </dependency>
+        
         
         <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
         <dependency>
