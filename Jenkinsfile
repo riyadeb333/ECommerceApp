@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/riyadeb333/ECommerceApp'
+                git branch: 'main', url: 'https://github.com/riyadeb333/ECommerceApp.git'
             }
         }
         
