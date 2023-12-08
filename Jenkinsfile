@@ -1,42 +1,35 @@
-pipeline {
+ pipeline {
     agent any
     
     tools {
-        maven 'Maven 3.9.2'
-        jdk 'JDK 19.0.1'
+        maven 'M3'
+        //jdk 'JDK 19.0.1'
     }
     
     stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'main', url: 'https://github.com/riyadeb333/ECommerceApp.git'
-            }
-        }
         
-        stage('Initialize') {
-            steps {
-                sh '''
-                    echo "PATH = ${PATH}"
-                    echo "M2_HOME = ${M2_HOME}"
-                '''
-            }
-        }
+        // stage('Initialize') {
+        //     steps {
+        //         sh '''
+        //             echo "PATH = ${PATH}"
+        //             echo "M2_HOME = ${M2_HOME}"
+        //         '''
+        //     }
+        // }
 
         stage('Build') {
-            steps {
-                dir('backend') {
-                    sh 'mvn clean install -DskipTests'
-                }
+           steps {
+                // Get some code from a GitHub repository
+                git 'https://github.com/riyadeb333/ECommerceApp.git'
+
+                // Run Maven on a Unix agent.
+                sh "mvn install"
+
+                // To run Maven on a Windows agent, use
+                // bat "mvn -Dmaven.test.failure.ignore=true clean package"
             }
         }
         
-        stage('Test') {
-            steps {
-                dir('backend') {
-                    sh 'mvn test'
-                }
-            }
-        }
         
         stage('Package') {
             steps {
