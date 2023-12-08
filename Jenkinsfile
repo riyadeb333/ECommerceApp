@@ -3,13 +3,13 @@ pipeline {
     
     tools {
         maven 'Maven 3.9.2'
-        jdk 'JDK 19.0.1'
+        jdk 'jdk-17.0.7'
     }
     
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/riyadeb333/ECommerceApp.git'
+                git branch: 'main', url: 'https://github.com/riyadeb333/ECommerceApp'
             }
         }
         
