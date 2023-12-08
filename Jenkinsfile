@@ -15,7 +15,7 @@ pipeline {
         
         stage('Initialize') {
             steps {
-                sh '''
+                bat '''
                     echo "PATH = ${PATH}"
                     echo "M2_HOME = ${M2_HOME}"
                 '''
@@ -24,7 +24,7 @@ pipeline {
 
         stage('Build') {
             steps { 
-                    sh 'mvn install'
+                    bat 'mvn install'
                 }
             
         }
@@ -40,7 +40,7 @@ pipeline {
         stage('Package') {
             steps {
                 dir('backend') {
-                    sh 'mvn package'
+                    bat 'mvn package'
                 }
             }
         }
