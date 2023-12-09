@@ -1,2 +1,2 @@
 # ECommerceApp
-DevOps project
+DevOps project For Assignment
